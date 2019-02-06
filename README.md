@@ -2,6 +2,11 @@
 Code and notebooks related to the paper: "Reconstructing Faces from fMRI Patterns using Deep Generative Neural Networks" by VanRullen &amp; Reddy, 2019
 
 This folder contains:
-* a link to download the fMRI datasets (4 subjects, each saw > 8,000 faces in the scanner) and some Matlab analysis code
+* a link to download the pre-trained VAE-GAN model checkpoint (~15 epochs on CelebA dataset=50,000 batches of 64 images)
 * a set of .py functions for the VAE-GAN face decomposition/reconstruction model
 * together with a .ipynb notebook showing examples of usage
+* (optional) a link to download the fMRI datasets (4 subjects, each saw > 8,000 faces in the scanner) and some Matlab analysis code
+
+Requirements:
+* Python >= 3.4
+* Tensorflow >= 1.2
