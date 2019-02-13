@@ -12,3 +12,4 @@ This folder contains:
 Requirements:
 * Python >= 3.4
 * Tensorflow >= 1.2
+* git-lfs to download the pre-trained model checkpoint (>500MB)
