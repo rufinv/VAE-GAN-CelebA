@@ -1,6 +1,6 @@
 """Build the VAEGAN network
 
-Part of the code adapted from:
+Part of the code was adapted from:
 Parag K. Mital
 Creative applications of deep learning
 (Kadenze course)
