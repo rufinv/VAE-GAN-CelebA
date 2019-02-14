@@ -1,5 +1,5 @@
 # VAE-GAN-CelebA
-Code and notebooks related to the paper: ["Reconstructing Faces from fMRI Patterns using Deep Generative Neural Networks"](https://arxiv.org/abs/1810.03856) by VanRullen &amp; Reddy, 2019
+Python code related to the paper: ["Reconstructing Faces from fMRI Patterns using Deep Generative Neural Networks"](https://arxiv.org/abs/1810.03856) by VanRullen &amp; Reddy (2019)
 
 ### This folder contains:
 * a pre-trained VAE-GAN model checkpoint 'vaegan_celeba.ckpt' (~15 epochs on CelebA dataset=50,000 batches of 64 images)
