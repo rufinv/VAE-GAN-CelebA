@@ -26,13 +26,20 @@ print('TF version = ',tf.__version__)
 def main(argv):
     file = ''
     try:
-        opts, args = getopt.getopt(argv,"hi:",["ifile="])
+        opts, args = getopt.getopt(argv,"hi:",["help","ifile="])
     except getopt.GetoptError:
         print ('VAEGAN_latent2image.py -i <inputfile>')
         sys.exit(2)
     for opt, arg in opts:
-        if opt == ('-h', '--help'):
+        if opt in ("-h", "--help"):
             print ('VAEGAN_latent2image.py -i <inputfile>')
+            print ('   Will load the vaegan_celeba.ckpt model (make sure it''s in the folder),')
+            print ('   apply it to the input .mat file (Matlab format) containing the 1024 latent')
+            print ('   variables (for one or multiple images simultaneously, defined by the number')
+            print ('   of matrix rows) to generate the reconstructed images, saved as')
+            print ('   inputfile_g.mat (Matlab format).')
+            print ('   IF the number of images (matrix rows) is 1, also save the reconstructed')
+            print ('   image as inputfile_g.jpg')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             file = arg
@@ -44,6 +51,7 @@ def main(argv):
         print("VAE-GAN model restored.")
     else:
         print("Pre-trained network appears to be missing.")
+        sys.exit()
 
 
     #load data from Matlab format

@@ -27,13 +27,16 @@ sys.path
 def main(argv):
     file = ''
     try:
-        opts, args = getopt.getopt(argv,"hi:",["ifile="])
+        opts, args = getopt.getopt(argv,"hi:",["help","ifile="])
     except getopt.GetoptError:
         print ('VAEGAN_image2latent.py -i <inputfile>')
         sys.exit(2)
     for opt, arg in opts:
-        if opt == ('-h', '--help'):
+        if opt in ("-h", "--help"):
             print ('VAEGAN_image2latent.py -i <inputfile>')
+            print ('   Will load the vaegan_celeba.ckpt model (make sure it''s in the folder),')
+            print ('   apply it to the input image (only one image at a time) to compute the')
+            print ('   1024 latent variables, saved as inputfile_z.mat (Matlab format).')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             file = arg
@@ -45,6 +48,7 @@ def main(argv):
         print("VAE-GAN model restored.")
     else:
         print("Pre-trained network appears to be missing.")
+        sys.exit()
 
     img = plt.imread(file)[..., :3]
     img = utils.preprocess128(img,crop_factor=0.8)[np.newaxis]
