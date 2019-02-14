@@ -6,7 +6,7 @@ Python code related to the paper: ["Reconstructing Faces from fMRI Patterns usin
 * a set of .py functions for the VAE-GAN face decomposition/reconstruction model, in particular:
   * VAEGAN_image2latent.py => goes from any image file to the corresponding 1024D latent encoding (saved as a Matlab .mat file)
   * VAEGAN_latent2image.py => goes from a 1024D latent encoding (Matlab .mat file) to the corresponding image(s)
-* (optional) [a link to download the fMRI datasets](https://openneuro.com/) (4 subjects, each saw > 8,000 faces in the scanner) and some Matlab analysis code
+* (optional) [a link to download the fMRI datasets](https://openneuro.org/datasets/ds001759) (4 subjects, each saw > 8,000 faces in the scanner) and some Matlab analysis code
 
 ### Example usage:
     VAEGAN_image2latent.py -i example.jpg     #this will create example_z.mat with the 1024 latent vars
