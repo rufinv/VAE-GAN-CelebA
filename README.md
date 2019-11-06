@@ -14,6 +14,6 @@ Python code related to the paper: ["Reconstructing Faces from fMRI Patterns usin
 
 ### Requirements:
 * Python >= 3.4
-* Tensorflow >= 1.8<!---
-* git-lfs to download the pre-trained model checkpoint (>500MB)-->
+* Tensorflow >= 1.8
 * matplotlib, numpy, scipy, skimage
+<!---* git-lfs to download the pre-trained model checkpoint (>500MB)-->
