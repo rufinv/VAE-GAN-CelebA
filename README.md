@@ -2,7 +2,7 @@
 Python code related to the paper: ["Reconstructing Faces from fMRI Patterns using Deep Generative Neural Networks"](https://arxiv.org/abs/1810.03856) by VanRullen &amp; Reddy (2019)
 
 ### This folder contains:
-* a [link to a pre-trained VAE-GAN model checkpoint 'vaegan_celeba.ckpt'](http://depotcerco.univ-tlse3.fr/vmcca78o) (~15 epochs on CelebA dataset=50,000 batches of 64 images)
+* a [link to a pre-trained VAE-GAN model checkpoint 'vaegan_celeba.ckpt'](http://depotcerco.univ-tlse3.fr/89p1tff) (~15 epochs on CelebA dataset=50,000 batches of 64 images)
 * a set of .py functions for the VAE-GAN face decomposition/reconstruction model, in particular:
   * VAEGAN_image2latent.py => goes from any image file to the corresponding 1024D latent encoding (saved as a Matlab .mat file)
   * VAEGAN_latent2image.py => goes from a 1024D latent encoding (Matlab .mat file) to the corresponding image(s)
